@@ -3,44 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teamsters Local 2024 Events</title>
+    <title>Teamsters Local 2024 Calendar</title>
     <style>
+        /* General Reset and Styling */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
             color: #333;
         }
 
+        /* Header Styling */
         header {
             background-color: #003366;
             color: white;
-            padding: 20px;
             text-align: center;
-            font-size: 2em;
+            padding: 20px;
+            font-size: 2.5em;
             font-weight: bold;
+            line-height: 1.2;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
+        header span {
+            display: block;
+            font-size: 1.2em;
+            color: #f4f4f4;
+        }
+
+        /* Main Content Styling */
         main {
             max-width: 900px;
-            margin: 20px auto;
-            padding: 10px;
+            margin: 30px auto;
+            padding: 20px;
             background: white;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
 
         section {
-            margin-bottom: 30px;
-        }
-
-        h2 {
-            font-size: 1.5em;
-            color: #003366;
-            text-align: center;
-            margin-bottom: 15px;
+            margin-bottom: 40px;
         }
 
         iframe {
@@ -49,24 +51,49 @@
             border: solid 1px #777;
             border-radius: 5px;
         }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            header {
+                font-size: 2em;
+                padding: 15px;
+            }
+
+            iframe {
+                height: 500px;
+            }
+
+            main {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 1.8em;
+            }
+
+            iframe {
+                height: 400px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        Teamsters Local 2024 Events
+        Teamsters Local 2024 Calendar
+        <span>Stay updated with our events and schedules</span>
     </header>
     <main>
-        <!-- Second Calendar (Agenda View) -->
+        <!-- First Calendar -->
         <section>
-            <h2>Upcoming Events (Agenda View)</h2>
             <iframe 
                 src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FDetroit&showPrint=0&mode=AGENDA&showCalendars=0&src=YTkyMjE2Y2IwMDM5ZDFlOWM2NjVjOGE0YWVmOTAzNTFlMTRhZmIxMzMzZjJlMGE0NzcyOWI5MTUxZTdjNjBjNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23009688">
             </iframe>
         </section>
 
-        <!-- First Calendar -->
+        <!-- Second Calendar -->
         <section>
-            <h2>Full Calendar View</h2>
             <iframe 
                 src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FDetroit&showPrint=0&src=YTkyMjE2Y2IwMDM5ZDFlOWM2NjVjOGE0YWVmOTAzNTFlMTRhZmIxMzMzZjJlMGE0NzcyOWI5MTUxZTdjNjBjNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23009688">
             </iframe>
